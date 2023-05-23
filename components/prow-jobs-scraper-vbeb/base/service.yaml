@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: prow-jobs-scraper-vbeb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: prow-jobs-scraper-vbeb
+    app.kubernetes.io/part-of: prow-jobs-scraper
+  name: prow-jobs-scraper-vbeb
+spec:
+  ports:
+  - port: 9200
+    targetPort: 9200
+  selector:
+    app.kubernetes.io/instance: prow-jobs-scraper-vbeb
+status:
+  loadBalancer: {}
