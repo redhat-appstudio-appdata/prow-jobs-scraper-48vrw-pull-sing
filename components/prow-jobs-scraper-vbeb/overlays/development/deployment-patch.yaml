@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: prow-jobs-scraper-vbeb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-migration-tenant/prow-jobs-scraper/prow-jobs-scraper-vbeb@sha256:eef7258e2200199f4dfcd259dde079f6942397de3d63cf9b8ff5c05656d0ea8a
+        name: container-image
+        resources: {}
+status: {}
