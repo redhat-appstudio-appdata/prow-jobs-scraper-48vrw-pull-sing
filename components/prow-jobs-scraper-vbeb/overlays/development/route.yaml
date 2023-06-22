@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: prow-jobs-scraper-vbeb
     app.kubernetes.io/part-of: prow-jobs-scraper
-  name: prow-jobs-scraper-vbebazpz
+  name: prow-jobs-scraper-vbebwggb
 spec:
   port:
     targetPort: 9200
