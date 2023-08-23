@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: prow-jobs-scraper-vbeb
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/rhtap-migration-tenant/prow-jobs-scraper/prow-jobs-scraper-vbeb@sha256:06ff3b2f0f386e7bfa4b27f603a35287b42cc08a91cc430dd985aa126c96ce3f
         imagePullPolicy: Always
         name: container-image
         ports:
